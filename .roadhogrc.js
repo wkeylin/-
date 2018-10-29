@@ -6,6 +6,8 @@ const svgSpriteDirs = [
   require.resolve('antd').replace(/index\.js$/, '')
 ]
 
+const host = 'http://10.10.1.40:6060';
+
 export default {
   entry: 'src/index.js',
   svgSpriteLoaderDirs: svgSpriteDirs,
@@ -27,47 +29,42 @@ export default {
   // },
   proxy: {
     "/shop": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/shop": "/shop" }
     },
     "/dishMenu": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/dishMenu": "/dishMenu" }
     },
     "/dishUnit": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/dishUnit": "/dishUnit" }
     },
     "/recipe": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/recipe": "/recipe" }
     },
     "/supply": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/supply": "/supply" }
     },
     "/suppUnit": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/suppunit" : "/suppunit" }
     },
-    "/shop": {
-      "target": "http://10.10.1.40:6060",
-      "changeOrigin": true,
-      "pathRewrite": { "^/shop" : "/shop" }
-    },
     "/dishBomMenu": {
-      "target": "https://www.easy-mock.com/mock/5b6d1d3074f31821884d5240",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/dishBomMenu" : "/dishBomMenu" }
     },
     "/dish": {
-      "target": "http://10.10.1.40:6060",
+      "target": host,
       "changeOrigin": true,
       "pathRewrite": { "^/dish" : "/dish" }
     },

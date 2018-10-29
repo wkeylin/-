@@ -1,4 +1,13 @@
 ## 项目2组前端技术方案
+### 使用方法  
+1. 下载、安装Yarn  
+https://yarnpkg.com/latest.msi
+2. 在项目根目录中，打开cmd，运行命令，耐心等待安装完成  
+yarn install  
+3. 运行项目  
+yarn start  
+4. 修改后端代理路径  
+在项目根目录下的.roadhogrc.js文件中，更改host变量的值即可，修改后重新运行第三步才会生效
 ### 一、业务流程图
 
 ![业务流程图](http://image.keyling.cn/%E5%89%8D%E7%AB%AF%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE.png "业务流程图")
